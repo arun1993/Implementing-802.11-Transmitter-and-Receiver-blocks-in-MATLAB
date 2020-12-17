@@ -1,17 +1,9 @@
-# Implementing-a-basic-802.11-mod-ulation-demodulation-and-packet-processing-system
-In this repo, an  OFDM communication system is realized using Matlab. The system represents a simplified version of the WiFi (802.11) PHY layer, which involves packet construction at the transmitter side, and packet detection, synchronization and decoding at the receiver side. 
+# ECE_257B
 
-# (1) Packet construction and OFDM modulation.
-Step  (a) BPSK  modulation: 
-Step  (b) OFDM  modulation:  
-Step  (c) Add  STF  and  LTF  preambles  to  each  data  packet
-Step (d) Plot the magnitude of samples in the resulting STF. 
+File Description:
 
-# (2) Packet transmission and channel distortion
+OFDM_TX.m - This file contains the transmitter end code. You need to have a look at this to understand the parameters, preamble, pilots, and data generation.
 
-# (3) Packet detection
+mapping.m & demapper.m - These are helper files used for FEC and modulation/ demodulation
 
-# (4) Packet synchronization
-
-# (5) Channel estimation and packet decoding
-https://www.iol.unh.edu/services/testing/wireless/knowledgebase/theses/Surineni_SDR_Implementation_of_802.11_Baseband.pdf
+OFDM_RX.m - This file contains some basic code for receiver design and lists the blocks for which you need to write the code stubs. Some hints are provided in comments on how to implement these blocks. More will be added in the next few days.
